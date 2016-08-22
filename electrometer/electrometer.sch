@@ -1,0 +1,186 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:nixie_tube
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L NE2-NEON-BULB-DRILL GL1
+U 1 1 57BAA925
+P 3500 4750
+F 0 "GL1" H 3550 5050 50  0000 L BNN
+F 1 "NE2-NEON-BULB-DRILL" H 3550 4985 50  0000 L BNN
+F 2 "nixie_tube-NE2-NEON-BULB-DRILL" H 3500 4900 50  0001 C CNN
+F 3 "" H 3500 4750 60  0000 C CNN
+	1    3500 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 57BAA9D2
+P 3950 4100
+F 0 "R1" V 4030 4100 50  0000 C CNN
+F 1 "1M" V 3950 4100 50  0000 C CNN
+F 2 "" V 3880 4100 50  0000 C CNN
+F 3 "" H 3950 4100 50  0000 C CNN
+	1    3950 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Q_NPN_CBE Q1
+U 1 1 57BAAAB9
+P 4950 4100
+F 0 "Q1" H 5250 4150 50  0000 R CNN
+F 1 "2N3819" H 5550 4050 50  0000 R CNN
+F 2 "" H 5150 4200 50  0000 C CNN
+F 3 "" H 4950 4100 50  0000 C CNN
+	1    4950 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P1
+U 1 1 57BAAB12
+P 3450 3700
+F 0 "P1" H 3450 3850 50  0000 C CNN
+F 1 "antena" V 3550 3700 50  0000 C CNN
+F 2 "" H 3450 3700 50  0000 C CNN
+F 3 "" H 3450 3700 50  0000 C CNN
+	1    3450 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X02 P2
+U 1 1 57BAABBD
+P 4850 3600
+F 0 "P2" H 4850 3750 50  0000 C CNN
+F 1 "amperemeter" V 4950 3600 50  0000 C CNN
+F 2 "" H 4850 3600 50  0000 C CNN
+F 3 "" H 4850 3600 50  0000 C CNN
+	1    4850 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L SPST SW1
+U 1 1 57BAAC90
+P 6200 3700
+F 0 "SW1" H 6200 3800 50  0000 C CNN
+F 1 "SPST" H 6200 3600 50  0000 C CNN
+F 2 "" H 6200 3700 50  0000 C CNN
+F 3 "" H 6200 3700 50  0000 C CNN
+	1    6200 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L POT RV1
+U 1 1 57BAAD39
+P 5050 4850
+F 0 "RV1" H 5050 4750 50  0000 C CNN
+F 1 "50K" H 5050 4850 50  0000 C CNN
+F 2 "" H 5050 4850 50  0000 C CNN
+F 3 "" H 5050 4850 50  0000 C CNN
+	1    5050 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L Battery BT1
+U 1 1 57BAADB0
+P 6200 4650
+F 0 "BT1" H 6300 4700 50  0000 L CNN
+F 1 "9V" H 6300 4600 50  0000 L CNN
+F 2 "" V 6200 4690 50  0000 C CNN
+F 3 "" V 6200 4690 50  0000 C CNN
+	1    6200 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR1
+U 1 1 57BAAE03
+P 3500 5600
+F 0 "#PWR1" H 3500 5350 50  0001 C CNN
+F 1 "Earth" H 3500 5450 50  0001 C CNN
+F 2 "" H 3500 5600 50  0000 C CNN
+F 3 "" H 3500 5600 50  0000 C CNN
+	1    3500 5600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3400 3900
+Wire Wire Line
+	3500 3900 3500 4450
+Wire Wire Line
+	3500 5050 3500 5600
+Wire Wire Line
+	3800 4100 3500 4100
+Connection ~ 3500 4100
+Wire Wire Line
+	4100 4100 4750 4100
+Wire Wire Line
+	5050 4300 5050 4500
+Wire Wire Line
+	5050 3650 5050 3900
+Wire Wire Line
+	5050 3550 5050 2950
+Wire Wire Line
+	5050 2950 6200 2950
+Wire Wire Line
+	6200 2950 6200 3200
+Wire Wire Line
+	6200 4200 6200 4500
+Wire Wire Line
+	6200 5350 6200 4800
+Wire Wire Line
+	3500 5350 6200 5350
+Connection ~ 3500 5350
+Wire Wire Line
+	5050 5100 5050 5350
+Connection ~ 5050 5350
+Text Notes 5050 3450 0    60   ~ 0
++
+Text Notes 5050 3750 0    60   ~ 0
+-
+Text Notes 3100 5550 0    60   ~ 0
+Optional
+Wire Wire Line
+	5200 4850 5200 4500
+Wire Wire Line
+	5200 4500 5050 4500
+NoConn ~ 5050 4600
+$EndSCHEMATC

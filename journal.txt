@@ -2,3 +2,6 @@
 
 2016-08-22 00:29 No cad software to use.
 I have no software to model schematic which used a neon bulb. I've just purchased some of them and 2 battery testers from which I will get appropriate ampere meters from Aliexpress. Hope them will help :D
+
+2016-08-22 14:40 Found library for neon bulb.
+Finally I found library for neon bulb so that I could create schematic in Kicad. This library was folked from another github repository. My bad, I forgot his/her name. Will mentioned in README later.
