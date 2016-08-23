@@ -5,3 +5,6 @@ I have no software to model schematic which used a neon bulb. I've just purchase
 
 2016-08-22 14:40 Found library for neon bulb.
 Finally I found library for neon bulb so that I could create schematic in Kicad. This library was folked from another github repository. My bad, I forgot his/her name. Will mentioned in README later.
+
+2016-08-22 21:30 Suspend to wait for ordered components.
+It may takes couple of weeks to get my ordered neon bulb and needles, so it should be suspended here till that time. I will focus on oximeter while waiting for them.
